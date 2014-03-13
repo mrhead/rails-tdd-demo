@@ -8,7 +8,10 @@
 </head>
 <body>
 
-<%= yield %>
+<div class="container">
+  <%= render 'application/flash_messages' %>
+  <%= yield %>
+</div>
 
 </body>
 </html>

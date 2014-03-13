@@ -1,0 +1,8 @@
+<% [:notice, :alert].each do |key| %>
+  <% if flash[key] %>
+    <div class="alert alert-<%= alert_key(key) %> alert-dismissable">
+      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+      <%= flash[key] %>
+    </div>
+  <% end %>
+<% end %>
