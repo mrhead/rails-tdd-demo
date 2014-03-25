@@ -1,3 +1,10 @@
 <h1><%= @post.title %></h1>
 
 <%= @post.content %>
+
+<%= simple_form_for([@post, @comment]) do |f| %>
+  <%= f.input :text %>
+  <%= f.submit %>
+<% end %>
+
+<%= render @comments %>

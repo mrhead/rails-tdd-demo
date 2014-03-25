@@ -1,5 +1,4 @@
 FactoryGirl.define do
-  # factory :post do
-  #   title 'My Post!'
-  # end
+  factory :post do
+  end
 end
